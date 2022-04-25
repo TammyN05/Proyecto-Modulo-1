@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
+
+h1,h2,h3,h4,h5,h6,p,span,li,a{
+    font-family:'Poppins', sans-serif !important; 
+}
+
+body{
+    background-color: #1C1F23 !important;
+}
+
+.btn{
+    background-color: #46a2fd !important;
+    color: #2e2e2e !important;
+}
+
+.btn:hover{
+    background-color: #46a2fd98 !important;
+    color: #c7c7c7 !important;
+}
+
+/********************************HEADER Y NAV**************************************/
+
+.navbar-brand img{
+    width: 60px;
+    height: 60px;
+}
+/************************************END*******************************************/
+
+/**********************************PORTADA*****************************************/
+
+.blog-container-cover{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-top: 30px;
+    
+}
+
+.container-info-cover{
+    max-width: 800px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container-info-cover h2{
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container-info-cover p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+/******************************************END***************************************/
+
+/********************************SECCION DE SOBRE EL EVENTO**************************/
+
+#seccionsobre h2{
+    color: #88348E;
+}
+#iconoscontainer {
+    margin-left: 250px !important;
+    margin-right: auto !important;
+    border: #eaeaea solid 5px;
+    padding: 10px;
+    position: absolute;
+    left: 500px;
+    top:85px ;
+ }
+
+#iconos :hover{
+    transform: scale(1.1) ;
+    transition: 0.1s;
+}
+
+#iconos {
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 10px !important;
+}
+
+#iconos img {
+    max-width: 40px;
+}
+
+#iconos button {
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+}
+
+/**********************************END***************************************/
+
+/*****************************************FILTROS************************************/
+
+input[type="radio"]{
+    display: none;
+}
+
+.container-category{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-category label{
+    padding: 6px 40px;
+    margin: 10px;
+    font-size: 20px;
+    background: #e2e2e2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-category label:hover{
+    opacity: 0.8;
+}
+
+/*SISITEMA DE FILTRADO*/
+
+[value="TODOS"]:checked ~ .posts .post[data-category]{
+    display: block;
+}
+
+[value="12:00"]:checked ~ .posts .post:not([data-category~="12:00"]),
+[value="15:00"]:checked ~ .posts .post:not([data-category~="15:00"]),
+[value="18:00"]:checked ~ .posts .post:not([data-category~="18:00"]),
+[value="21:00"]:checked ~ .posts .post:not([data-category~="21:00"]){
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .container-category [for="TODOS"],
+[value="12:00"]:checked ~ .container-category [for="12:00"],
+[value="15:00"]:checked ~ .container-category [for="15:00"],
+[value="18:00"]:checked ~ .container-category [for="18:00"],
+[value="21:00"]:checked ~ .container-category [for="21:00"]{
+    background-color: #88348E;
+    color: #fff;
+
+}
+
+@media screen and (max-width: 1200px){
+    .posts{
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .posts{
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .posts{
+        grid-template-columns: repeat(1, 1fr)!important;
+    }
+}
+
+/***************************************END*********************************************/
+
+
+/****************************Post - Publicaciones - FILTRAJE***************************************/
+
+.container-post{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.posts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.posts .post{
+    background: #fff;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.post .ctn-img{
+    width: 100%;
+}
+
+.post .ctn-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post h2{
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.post span{
+    display: block;
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+
+.ctn-tag{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.ctn-tag li{
+    list-style: none;
+    font-size: 14px;
+    margin: 4px;
+    padding: 6px 10px;
+    background: #e8e8e8;
+    cursor: default;
+}
+
+
+.post button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 30px;
+    font-size: 16px;
+    background: #46a2fd;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.post button:hover{
+    opacity: 0.9;
+}
+
+
+/*****************************************SPONSORS*******************************************/
+
+#sponsors {
+    background-color: #000000 !important;
+    margin-top: 10%;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#sponsors img {
+    opacity: 70%;
+    max-width: 8%;
+    margin: 70px;
+}
+
+/****************************************DIFERENTES PRECIOS********************************************/
+
+.evento-container{
+    width: 1200px;
+    margin: auto;
+    background-color:#1C1F23;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #2c2f339b;
+
+}
+
+.filas{
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    padding: 10px;
+}
+
+.filas img{
+    width: 200px;
+}
+
+.items {
+  list-style: none!important;
+}
+
+@media screen and (max-width: 900px){
+    .contenedor{
+        max-width: 1200px;
+        margin: auto;
+        margin: 0 30px;
+        border-radius: 20px;
+        background-color: #2c2f339b;
+    }
+    .items{
+        display: none;
+    }
+}
+
+/****************************************PROXIMOS EVENTOS***************************************/
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.agenda{
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.agenda ul{
+    list-style: none;
+}
+
+.agenda ul li{
+    padding: 20px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.agenda ul li:first-child{
+    margin-top: 50px;
+}
+
+.agenda ul li:last-child{
+    margin-bottom:50px;
+}
+
+
+@media only screen and (min-width: 768px){
+    .agenda::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #cccccc;
+    }
+    .agenda ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    .agenda ul li:nth-child(odd){
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+    }
+
+    .agenda ul li:nth-child(even){
+        float: right;
+        clear: left;
+        transform: translateX(0px);
+    }
+
+    .agenda ul li::after{
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: #88348E;
+        border-radius: 50%;
+        top: 0%;
+    }
+     .agenda ul li:nth-child(odd)::after{
+        transform: translate(50%, -50%); 
+        right: -15px;
+     }
+     .agenda ul li:nth-child(even)::after{
+        transform: translate(-50%, -50%); 
+        left: -15px;
+     }
+    
+}
+
+
+/*****************************************FOOTER*******************************************/
+
+.iconos li{
+    padding: 20px;
+    justify-content: space-evenly;
+    color: #f4f4f4;
+}
+
+.iconito:hover{
+    transform: scale(1.1);
+    color: #00D5D9;
+    transition: 0.3s;
+}
+
+.contenedor-cartas{
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+}
+
+
+/**********************************PAGINA DE RESERVA*************************************/
+
+/*FOTO DE ACREDITACIÓN*/
+.foto-reserva{
+    opacity: 80%;
+    margin-top: 40px
+}
+.foto-reserva:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    opacity: 100%;
+}
+
+
+/*FORMULARIO DE CONTACTO*/
+
+.container-info-cover h3{
+    color: #e2e2e2;
+    font-size: 40px;
+    margin: 25px;
+
+}
+
+.formulario{
+	width:550px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+    margin-bottom: 50px;
+	background-color:rgb(47, 47, 47);
+    justify-content: center;
+    align-content: center;
+    
+
+}
+
+form label{
+	width:100%;
+    font-family:'Poppins', sans-serif; 
+	font-weight:bold;
+	display:block;
+    align-items: left;
+    color: #00D5D9;
+
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"]{
+	width:516px;
+	padding:3px 10px;
+	border:1px solid #000000;
+	border-radius:3px;
+	background-color:#ffffff;
+	margin:8px 0;
+	display:inline-block;
+    font-family:'Poppins', sans-serif; 
+}
+
+form input[type="radio"]{
+	padding:3px 10px;
+	border:1px solid #000000;
+	border-radius:3px;
+	background-color:#ffffff;
+	margin:8px 0;
+    color: #00D5D9;
+	display:inline-block;
+    font-family:'Poppins', sans-serif; 
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+    font-weight: 600;
+	color:rgb(23, 23, 23);
+	background-color:#00D5D9;
+    font-family:'Poppins', sans-serif; 
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+    color: #e2e2e2;
+    background-color: #00d5d9ac;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+    padding: 15px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+    font-family:'Poppins', sans-serif; 
+}
+
+
+
+/************************************************MEDIAS SCREEN***********************************************************/
+@media (max-width:912px){
+    #sobreelevento{
+        display: block !important;
+    }
+    #seccionsobre {
+        width: 90% !important;
+        display: flex !important;
+    }
+    #iconos {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 100% !important;
+        margin: 0% !important;
+    }
+    #iconoscontainer {
+       margin-left: auto !important;
+       margin-right: auto !important;
+        max-width: 80% !important;
+        position: static;
+ 
+    }
+
+}
+@media (max-width:576px){
+    
+#CARTASEVENTOS {
+    flex-wrap: wrap;
+}
+#sponsors {
+
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+#sponsors img {
+    max-width: 30% !important;
+    margin: auto !important;
+}
+#PROXIMOSEVENTOS{
+    display: block;
+    justify-content: end;
+}
+#sobreelevento{
+    display: block !important;
+    justify-content: center;
+}
+#seccionsobre {
+    width: 80% !important;
+    display: block !important;
+}
+#iconos {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 80% !important;
+    margin: 0% !important;
+}
+#iconoscontainer {
+    margin-left: 40px !important;
+    margin-right: 20px !important;
+    margin-top: 20px !important;
+    max-width: 100% !important;
+    position: static;
+ 
+}
+#iconos button {
+    position: absolute;
+    left: 87%;
+    bottom: 2%;
+  }
+  
+#gracias h1 {
+    font-size: 70px!important;
+}
+}

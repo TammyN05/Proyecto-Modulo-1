@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ULTRA</title>
+    <link rel="shortcute icon" href="fotos/LOGO PROYECTO blanco.png">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/cef7889f92.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    
+<!--HEADER Y NAV (TAMMY)-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand"  href="index.html"><img src="fotos/LOGO PROYECTO blanco.png" alt="Logo" class="img-fluid"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Categorias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Artistas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Agenda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Proximos eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-primary" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+<!------------------------------PORTADA------------------------------------->
+
+    
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="fotos/PORTADA.gif" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+      </div>
+
+
+<!-----------------------------END DE LA PORTADA---------------------------------->
+
+<!-----------------------SECCION SOBRE EL EVENTO (GABITO)------------------------->
+     
+<div class="d-flex justify-content-between" style="position: relative;" id="sobreelevento">
+    <section class="d-block" style="width:40%; margin-top: 100px;" id="seccionsobre">
+    <div>
+        <h2 style="margin-left: 20%; margin-bottom: 3%; margin-top: 5%;">SOBRE EL EVENTO</h2>
+        <div class="t" style="border-left: 5px solid rgb(165, 163, 163); margin-left: 15%; width: 95%; padding-left: 5%;">
+            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, laudantium. Magnam quos alias doloremque architecto, laudantium cum tenetur iusto non. Ad, modi magni. Nesciunt consequatur sed vitae atque, fugiat odit.</p>
+        </div>
+    </div>
+    <div class="margin-top: 10%">
+        <h2 style="margin-left: 20%; margin-bottom: 3%; margin-top: 5%;">DETALLES TÉCNICOS</h2>
+        <div class="t" style="border-left: 5px solid rgb(165, 163, 163); margin-left: 15%; width: 95%; padding-left: 5%;">
+        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, laudantium. Magnam quos alias doloremque architecto, laudantium cum tenetur iusto non. Ad, modi magni. Nesciunt consequatur sed vitae atque, fugiat odit.</p>
+        </div>
+    </div>
+    </section>
+        <section class="d-flex my-5"  id="iconoscontainer">
+        <div class="px-4 py-3" id="iconos" style="position: relative;">
+            <p class="text-light"> <img src="fotos/Creative.svg" alt="Creative"> -- Espacio para los streamers artistas. </p>
+            <p class="text-light"> <img src="fotos/Esports.svg" alt="E-sports"> -- E-sports en vivo.</p>
+            <p class="text-light"> <img src="fotos/irl_icon.svg" alt="irl_icon"> -- Charla con tu streamer favorito. </p>
+            <p class="text-light"> <img src="fotos/Gaming_icon.svg" alt="Gaming_icon"> -- Gaming no competitivo</p>
+            <p class="text-light"> <img src="fotos/music_icon.svg" alt="music_icon"> -- Streams musicales.</p>
+            <button type="button" class="botoncito btn btn-outline-secondary" style="margin-top: 20px;">Registrarse</button>
+        </div>
+        </section> 
+</div>
+
+ <!----------------------END DE SECCION SOBRE EL EVENTO (GABITO)---------------------------->
+
+
+
+
+
+
+
+
+
+
+
+    <!-------------------------SECCION DE AGENDA---------------------------------->
+
+  <!------------------------------TITULO-------------------------------------->
+
+  <div class="container-all" id="move-content">
+
+    
+    <div class="blog-container-cover">
+        <div class="container-info-cover">
+            <h2>AGENDA</h2>
+            <p>Filtra por hora, para saber cuando se presentan tus artistas favoritos.</p>
+        </div>
+    </div>
+
+<!---------------------------END DEL TUTULO------------------------------------>
+
+<!------------------------------ARTISTAS----------------------------------->
+    <div class="container-post">
+
+        <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+        <input type="radio" id="12:00" name="categories" value="12:00">
+        <input type="radio" id="15:00" name="categories" value="15:00">
+        <input type="radio" id="18:00" name="categories" value="18:00">
+        <input type="radio" id="21:00" name="categories" value="21:00">
+
+        <div class="container-category">
+            <label for="TODOS">TODOS</label>
+            <label for="12:00">12:00 - 14:00</label>
+            <label for="15:00">15:00 - 17:00</label>
+            <label for="18:00">18:00 - 20:00</label>
+            <label for="21:00">21:00 - 00:00</label>
+        </div>
+
+        <div class="posts">
+
+            <div class="post" data-category="12:00">
+
+                <div class="ctn-img">
+                    <img src="fotos/14.jpg" alt="">
+                </div>
+                <h2>ARTISTA</h2>
+                <span>27 de abril - 12hs</span>
+                <a href=""><button>&#x2764; Seguir</button></a>
+
+            </div>
+
+            <div class="post" data-category="12:00">
+                
+                <div class="ctn-img">
+                    <img src="fotos/6.jpg" alt="">
+                </div>
+                <h2>ARTISTA</h2>
+                <span>27 de abril - 14hs</span>
+                <a href=""><button>&#x2764; Seguir</button></a>
+
+            </div>
+            <div class="post" data-category="15:00">
+                
+                <div class="ctn-img">
+                    <img src="fotos/5.jpg" alt="">
+                </div>
+                <h2>ARTISTA</h2>
+                <span>27 de abril - 16hs</span>
+                <a href=""><button>&#x2764; Seguir</button></a>
+
+            </div>
+            <div class="post" data-category="15:00">
+                
+                <div class="ctn-img">
+                    <img src="fotos/7.jpg" alt="">
+                </div>
+                <h2>ARTISTA</h2>
+                <span>27 de abril - 18hs</span>
+                <a href=""><button>&#x2764; Seguir</button></a>
+
+            </div>
+            <div class="post" data-category="18:00">
+                
+                <div class="ctn-img">
+                    <img src="fotos/8.jpg" alt="">
+                </div>
+                <h2>ARTISTA</h2>
+                <span>27 de abril - 20hs</span>
+                <a href=""><button>&#x2764; Seguir</button></a>
+
+            </div>
+            <div class="post" data-category="18:00">
+                
+                <div class="ctn-img">
+                    <img src="fotos/9.jpg" alt="">
+                </div>
+                <h2>ARTISTA</h2>
+                <span>27 de abril - 21hs</span>
+                <a href=""><button>&#x2764; Seguir</button></a>
+
+            </div>
+            <div class="post" data-category="21:00">
+                
+                <div class="ctn-img">
+                    <img src="fotos/10.jpg" alt="">
+                </div>
+                <h2>ARTISTA</h2>
+                <span>27 de abril - 23hs</span>
+                <a href=""><button>&#x2764; Seguir</button></a>
+
+            </div>
+            <div class="post" data-category="21:00">
+                
+                <div class="ctn-img">
+                    <img src="fotos/16.jpg" alt="">
+                </div>
+                <h2>ARTISTA</h2>
+                <span>27 de abril - 00hs</span>
+                <a href=""><button>&#x2764; Seguir</button></a>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+<!------------------------------END DE LOS ARTISTAS/AGENDA---------------------------->
+
+
+<!-------------------------------------SPONSORS--------------------------------------->
+
+<div class="d-flex bg-dark" id="sponsors">
+    <img src="fotos\Bacardí_logo.png" alt="logoBacardi">
+    <img src="fotos/Channel_logo.png" alt="cahnnel">
+    <img src="fotos/Laliga_logo.png" class="img-fluid"  alt="logoLaliga">
+    <img src="fotos/Logo_wii.png" alt="logowii">
+    <img src="fotos/Cocacola.png" alt="logoCocacola">
+</div>
+
+<!-------------------------------------END DE SPONSORS--------------------------------------->
+
+
+<!------------------------------PRECIOS DEL EVENTO------------------------------------>
+
+<div class="evento-container-lg">
+    <div class="container-info-cover my-5">
+        <h2>RESERVA TU ENTRADA</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+    <div class="contenedor">
+        <div class="filas row">
+            <div class="col-4 ">
+                <img src="fotos/1.png" class="fotitos img-fluid" alt="...">
+        </div>
+        <div class="items col-4 ">
+    <ul>
+        <li style="color: rgb(255, 255, 255); list-style: none; font-size: 25px;">INCLUYE</li>
+        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+        <li style="color: rgba(255, 255, 255, 0.26); list-style: none;">Lorem ipsum</li>
+        <li style="color: rgba(255, 255, 255, 0.26); list-style: none;">Lorem ipsum</li>
+        <li style="color: rgba(255, 255, 255, 0.26); list-style: none;">Lorem ipsum</li>
+    </ul>
+        </div>
+        <div class="col-4">
+        <h3 style="color: rgb(255, 255, 255);">$29.00<span style="font-size: 15px;">USD</span></h3>
+        <a href="reserva.html"><button type="button" class="btn btn-light">COMPRAR</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="evento-container-lg">
+    <div class="contenedor">
+        <div class="filas row my-5 ">
+            <div class="col-4">
+                <h3 style="color: rgb(255, 255, 255);">$39.00<span style="font-size: 15px;">USD</span></h3>
+                <a href=""><button type="button" class="btn btn-light">COMPRAR</button></a>
+                </div>
+                <div class="items col-4 ">
+                    <ul>
+                        <li style="color: rgb(255, 255, 255); list-style: none; font-size: 25px;">INCLUYE</li>
+                        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+                        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+                        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+                        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+                        <li style="color: rgba(255, 255, 255, 0.26); list-style: none;">Lorem ipsum</li>
+                        <li style="color: rgba(255, 255, 255, 0.26); list-style: none;">Lorem ipsum</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <img src="fotos/2.png" class="fotitos img-fluid" alt="...">
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="evento-container-lg">
+    <div class="contenedor">
+        <div class="filas row my-5 ">
+            <div class="col-4 ">
+                <img src="fotos/3.png" class="fotitos img-fluid" alt="...">
+        </div>
+        <div class="items col-4 ">
+    <ul>
+        <li style="color: rgb(255, 255, 255); list-style: none; font-size: 25px;">INCLUYE</li>
+        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+        <li style="color: rgb(255, 255, 255); list-style: none;">Lorem ipsum</li>
+    </ul>
+        </div>
+        <div class="col-4">
+        <h3 style="color: rgb(255, 255, 255);">$49.00<span style="font-size: 15px;">USD</span></h3>
+        <a href=""><button type="button" class="btn btn-light">COMPRAR</button></a>
+        </div>
+    </div>
+</div>
+
+
+<!------------------------------BANNER-------------------------------->
+
+
+<!-------------------------PROXIMOS EVENTOS--------------------------->
+<div class="gg container-md" id="PROXIMOSEVENTOS">
+   
+    <h2 class="gg text-center text-light" style="padding: 5%; font-size: 50px;">PRÓXIMOS EVENTOS</h2>
+
+    <div class="container">
+      <div class="agenda">
+          <ul>
+              <li>
+                  <div class="agenda-content">
+                      <h1>Heading 1</h1>
+                      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam non sunt nisi. Blanditiis dolore quae aliquam unde facere, labore repellat eos quasi accusantium, quo nam omnis ab tempore voluptatibus?</P>
+                  </div>
+              </li>
+              <li>
+                  <div class="agenda-content">
+                      <h1>Heading 2</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam non sunt nisi. Blanditiis dolore quae aliquam unde facere, labore repellat eos quasi accusantium, quo nam omnis ab tempore voluptatibus?</P>
+                  </div>
+              </li>
+              <li>
+                  <div class="agenda-content">
+                      <h1>Heading 3</h1>
+                      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam non sunt nisi. Blanditiis dolore quae aliquam unde facere, labore repellat eos quasi accusantium, quo nam omnis ab tempore voluptatibus?</P>
+                  </div>
+              </li>
+              <li>
+                  <div class="agenda-content">
+                      <h1>Heading 4</h1>
+                      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam non sunt nisi. Blanditiis dolore quae aliquam unde facere, labore repellat eos quasi accusantium, quo nam omnis ab tempore voluptatibus?</P>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+    <div class="gg d-flex justify-content-center" style="margin-top: 10%;">
+    <button type="button" class="btn btn-secondary btn-lg text-center">RESERVAR ENTRADAS</button>
+    </div>
+</div>
+
+   <!--FOOTER-->
+   <div class="footer-container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <ul style="color:#ffffff; list-style: none;">
+            <li>© 2022 The ULTRA</li>
+            <li>contacto@theultra.com</li>
+            <li>6666-6666</li>
+            <li>De Matea al mundo</li>
+        </ul>
+      </div>
+      <ul class="iconos nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li><i class="iconito fa-brands fa-twitch" style="font-size: 25px;"></i>
+          <li><i class="iconito fa-brands fa-twitter" style="font-size: 25px;"></i> </li>
+          <li><i class="iconito fa-brands fa-instagram" style="font-size: 25px;"></i></li>
+          <li><i class="iconito fa-brands fa-youtube" style="font-size: 25px;"></i></li></li>
+          <li><i class="iconito fa-brands fa-spotify" style="font-size: 25px;"></i></li></li>
+      </ul>
+    </footer>
+  </div>
+  
+     
+  
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

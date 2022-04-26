@@ -8,16 +8,30 @@ body{
     background-color: #1C1F23 !important;
 }
 
-.btn{
-    background-color: #46a2fd !important;
+/*.btn{
+    background-color: #481b4b !important;
     color: #2e2e2e !important;
 }
 
 .btn:hover{
     background-color: #46a2fd98 !important;
     color: #c7c7c7 !important;
+}*/
+.btn{
+    background-color: #a945c7;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.2s;
 }
 
+.btn:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 0.3s;
+ }
+  
 /********************************HEADER Y NAV**************************************/
 
 .navbar-brand img{
@@ -77,6 +91,7 @@ body{
     top:85px ;
  }
 
+
 #iconos :hover{
     transform: scale(1.1) ;
     transition: 0.1s;
@@ -99,6 +114,103 @@ body{
 }
 
 /**********************************END***************************************/
+
+/***************************INICIO ARTISTAS*********************************/
+#artistas{
+    color: #ffff;
+    text-align: center;
+    padding-bottom: 15px;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 200px !important;
+}
+#artistas .A{
+    display: flex;
+    justify-content: space-between;
+}
+.artistasi{
+    padding:20px;
+}
+.artistasi button{
+    margin-bottom: 0px;
+}
+.artistasi h3{
+    color: #ffffff;
+}
+.artistasi p{
+    color:#ffffff
+}
+.artistasi h2{
+    font-size: 1em;
+}
+
+#artistas h2{
+    padding: 40px;
+}
+
+#artistas .cartauno{
+    background-position: center center;
+    background-size: cover;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius:20px ;
+}
+#artistas .cartados{
+    background-position: center center;
+    background-size: cover;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius:20px ;
+}
+#artistas .cartatres{
+    background-position: center center;
+    background-size: cover;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius:20px ;
+}
+#artistas .cartacuatro{
+    background-position: center center;
+    background-size: cover;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius:20px ;
+}
+
+.cartauno{
+    background-image: linear-gradient(
+        0deg,
+        #6b0e74a1,
+        #383838bd
+    );
+
+}
+.cartados{
+    background-image: linear-gradient(
+        0deg,
+        #6b0e74a1,
+        #383838bd
+    );
+
+}
+
+.cartatres{
+    background-image: linear-gradient(
+        0deg,
+        #6b0e74a1,
+        #383838bd
+    );
+
+}
+.cartacuatro{
+    background-image: linear-gradient(
+        0deg,
+        #6b0e74a1,
+        #383838bd
+    );
+
+}
+/**************************************FIN ARTISTAS**********************************/
 
 /*****************************************FILTROS************************************/
 
@@ -256,7 +368,7 @@ input[type="radio"]{
 /*****************************************SPONSORS*******************************************/
 
 #sponsors {
-    background-color: #000000 !important;
+    background-color: #00000000 !important;
     margin-top: 10%;
     flex-wrap: nowrap;
     display: flex;
@@ -313,6 +425,67 @@ input[type="radio"]{
         display: none;
     }
 }
+
+/*********************************************BANNER************************************/
+.Bcontainer-lg {
+    display: flex;
+    max-width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: auto;
+    margin-right: 100px;
+    margin-left: -50px;
+}
+
+.foto-banner{
+    width: 60%;
+    text-align: center;
+    margin-top: 55px;
+    transform: rotate(0deg);
+}
+
+.banner img {
+    width: 60%;
+    border-radius: 7px;
+}
+
+.foto-banner:hover{
+    transform: rotate(360deg) !important;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.parrafo h2 {
+    font-size: 40px;
+    color: #88348E;
+}
+.parrafo p {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.ibanner{
+    font-size: 60px; 
+    color: #595959;
+}
+
+.ibanner:hover{
+ transform: scale(1.1);
+ transition: 0.3s;
+ color: #88348E;
+}
+
+/****************************************FIN BANNER***************************************/
 
 /****************************************PROXIMOS EVENTOS***************************************/
 
@@ -424,6 +597,52 @@ input[type="radio"]{
     padding: 10px;
 }
 
+/*INICIO CONTACTO*/
+.contact >*{
+    padding: 1em;
+}
+
+.contacto-seccion{
+    margin-top: 100px;
+}
+.contact-form .titulo{
+    color: #88348E;
+}
+.contact-form{
+    background-color: #00000054;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+} 
+.contact-form form p{
+    margin: 5px;
+    padding: .4em;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form textarea{
+    width: 100%;
+    padding: .5em;
+    border: none;
+    background-color: none;
+    outline: none;
+    color: #000000;
+}
+.contact-form label,
+.contact-form h2{
+    color: rgb(255, 255, 255);
+}
+.contact-info p,
+.contact-info ul,
+.contact-info h4{
+    color: #ffffff;
+}
+.map{
+    display: flex;
+    align-self: center;
+}
+
+
 
 /**********************************PAGINA DE RESERVA*************************************/
 
@@ -439,7 +658,7 @@ input[type="radio"]{
 }
 
 
-/*FORMULARIO DE CONTACTO*/
+/****************************************FORMULARIO DE CONTACTO****************************************/
 
 .container-info-cover h3{
     color: #e2e2e2;
@@ -530,6 +749,14 @@ textarea{
 
 
 /************************************************MEDIAS SCREEN***********************************************************/
+
+@media (min-width:1400px) {
+    #iconoscontainer{
+        position: absolute;
+        left: 1050px;
+    }
+}
+
 @media (max-width:912px){
     #sobreelevento{
         display: block !important;
@@ -592,8 +819,8 @@ textarea{
     margin-top: 20px !important;
     max-width: 100% !important;
     position: static;
- 
 }
+
 #iconos button {
     position: absolute;
     left: 87%;
@@ -604,3 +831,53 @@ textarea{
     font-size: 70px!important;
 }
 }
+
+@media (max-width:680px){
+    .map{
+        display:none;
+    }
+    }
+    .banner >img{
+        display: none;
+    }
+    #artistas 
+    .cartauno h3, .cartauno p,
+    .cartados h3, .cartados p,
+    .cartatres h3, .cartatres p,
+    .cartacuatro h3, .cartacuatro p{
+        display: none;
+    }
+    .A{
+        flex-wrap:wrap;
+    }
+    .artistasi{
+        margin: auto;
+        width: 100%;
+    }
+    .boton{
+        padding-top: 10px;
+    }
+    @media (min-width:992px){
+    .banner >img{
+        display: inline-block;
+    }
+    .parrafo {
+        width: 45%;
+    }
+    .map{
+        display: inline-block;
+    }
+    #artistas 
+    .cartauno h3, .cartauno p,
+    .cartados h3, .cartados p,
+    .cartatres h3, .cartatres p,
+    .cartacuatro h3, .cartacuatro p{
+        display: block;
+    }
+    .artistasi{
+        margin:0px;
+    }
+    .A{
+        flex-wrap: nowrap;
+    }
+    }
